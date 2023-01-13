@@ -5,10 +5,18 @@ import org.springframework.stereotype.Component;
 @Component
 public class Player
 {
+    private int id;
     private String Name;
     private String type;
     private String CountryName;
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getCountryName() {
         return CountryName;

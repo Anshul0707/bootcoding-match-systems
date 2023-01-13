@@ -1,6 +1,7 @@
 package com.bootcoding.match.service;
 import com.bootcoding.match.model.Player;
 import com.bootcoding.match.utils.CountryNameGenerator;
+import com.bootcoding.match.utils.IdGenerator;
 import com.bootcoding.match.utils.PlayerNameGenerator;
 import com.bootcoding.match.utils.PlayerTypeGenerator;
 import org.springframework.stereotype.Service;
@@ -27,6 +28,7 @@ public class PlayerService
     private Player buildTeamPlayer()
     {
         Player player = new Player();
+        player.setId(IdGenerator.getId());
         player.setName(PlayerNameGenerator.getName());
         player.setCountryName(CountryNameGenerator.getCountryName());
         player.setType(PlayerTypeGenerator.getplayerType());
