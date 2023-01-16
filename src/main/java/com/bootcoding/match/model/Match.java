@@ -11,7 +11,9 @@ public class Match
     private String winnerTeam;
     private Date date;
 
-    public Date getDate() {
+    public Date getDate()
+
+    {
         return date;
     }
 
