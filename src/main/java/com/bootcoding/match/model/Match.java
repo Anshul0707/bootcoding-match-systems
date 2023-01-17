@@ -12,7 +12,6 @@ public class Match
     private Date date;
 
     public Date getDate()
-
     {
         return date;
     }
